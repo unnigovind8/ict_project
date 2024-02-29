@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+      <head>
+         <!-- Basic -->
+         <meta charset="utf-8" />
+         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+         <!-- Mobile Metas -->
+         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+         <!-- Site Metas -->
+         <link rel="icon" href="/static/images/fevicon.png" type="image/gif" />
+         <meta name="keywords" content="" />
+         <meta name="description" content="" />
+         <meta name="author" content="" />
+         <title>DSA - 7</title>
+         <!-- bootstrap core css -->
+         <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css" />
+         <!-- fonts style -->
+         <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+         <!-- font awesome style -->
+         <link href="/static/css/font-awesome.min.css" rel="stylesheet" />
+         <!-- Custom styles for this template -->
+         <link href="/static/css/style.css" rel="stylesheet" />
+         <!-- responsive style -->
+         <link href="/static/css/responsive.css" rel="stylesheet" />
+      </head>
+      <body class="sub_page">
+         <div class="hero_area">
+            <!-- header section strats -->
+            <header class="header_section long_section px-0">
+               <nav class="navbar navbar-expand-lg custom_nav-container ">
+                  <a class="navbar-brand" href="index.html">
+                  <span>
+                  DSA - 7
+                  </span>
+                  </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class=""> </span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+                        <ul class="navbar-nav  ">
+                           <li class="nav-item ">
+                              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="/about"> About</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="/knowledge_center">Knowledge Center</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="/contact">Contact Us</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="quote_btn-container">
+                        <form class="form-inline">
+                           <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                           <i class="fa fa-search" aria-hidden="true"></i>
+                           </button>
+                        </form>
+                     </div>
+                  </div>
+               </nav>
+            </header>
+            <!-- end header section -->
+         </div>
+         <!-- Predict section -->
+         <section class="about_section layout_padding long_section">
+            <!--used for prediction-->
+            <form id="form1" action="prediction"  method="post">
+               <div class="container">
+                  <div class="row">
+                     <div class="heading_container">
+                        <h2>
+                           Prediction  
+                        </h2>
+                        <style>
+                           .container {
+                           display: flex;
+                           justify-content: space-between; /* Adjust as needed */
+                           }
+                           .box {
+                           /* Add styling for the box */
+                           margin-right: 10px; /* Add space between boxes using margin */
+                           padding: 10px; /* Optional: Add padding to the boxes */
+                           }
+                           .box:last-child {
+                           margin-right: 0; /* Remove margin from the last box */
+                           }
+                           /*.detail-box {
+                           Add styling for the detail box
+                           }*/
+                           label {
+                           /* Add styling for labels */
+                           display: block; /* Ensure labels are displayed on their own line */
+                           margin-bottom: 5px; /* Add spacing between labels */
+                           }
+                           select {
+                           /* Add styling for select elements */
+                           width: 100%; /* Make select elements fill the available width */
+                           padding: 8px; /* Adjust padding as needed */
+                           border: 1px solid #ccc; /* Add border */
+                           border-radius: 5px; /* Add border radius */
+                           box-sizing: border-box; /* Ensure padding and border are included in the width */
+                           }
+                        </style>
+                        <div class="container">
+                           <div class="box">
+                              <div class="detail-box">
+                                 <label for="year">Choose a year:</label>
+                                 <select name="yr" id="year">
+                                    <option value="invalid">select</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2034">2034</option>
+                                    <option value="2039">2039</option>
+                                    <option value="2044">2044</option>
+                                    <option value="2049">2049</option>
+                                    <option value="2054">2054</option>
+                                    <option value="2059">2059</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <div class="box">
+                              <div class="detail-box">
+                                 <label for="constituency">Choose a Constituency:</label>
+                                 <select name="cname" id="constituency">
+                                    <option value="invalid">select</option>
+                                    <option value="KASARAGOD">Kasaragod</option>
+                                    <option value="KANNUR">Kannur</option>
+                                    <option value="VATAKARA">Vatakara</option>
+                                    <option value="WAYANAD">Wayanad</option>
+                                    <option value="KOZHIKODE">Kozhikode</option>
+                                    <option value="MALAPPURAM">Malappuram</option>
+                                    <option value="PONNANI">Ponnani</option>
+                                    <option value="PALAKKAD">Palakkad</option>
+                                    <option value="ALATHUR">Alathur</option>
+                                    <option value="THRISSUR">Thrissur</option>
+                                    <option value="CHALAKUDY">Chalakudy</option>
+                                    <option value="ERNAKULAM">Ernakulam</option>
+                                    <option value="IDUKKI">Idukki</option>
+                                    <option value="KOTTAYAM">Kottayam</option>
+                                    <option value="ALAPPUZHA">Alappuzha</option>
+                                    <option value="MAVELIKARA">Mavelikara</option>
+                                    <option value="PATHANAMTHITTA">Pathanamthitta</option>
+                                    <option value="KOLLAM">Kollam</option>
+                                    <option value="ATTINGAL">Attingal</option>
+                                    <option value="THIRUVANANTHAPURAM">Thiruvananthapuram</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <div class="box">
+                              <div class="detail-box">
+                                 <label for="party">Choose a Party:</label>
+                                 <select name="party" id="party">
+                                    <option value="invalid">select</option>
+                                    <option value="INC">INC</option>
+                                    <option value="CPM">CPM </option>
+                                    <option value="BJP">BJP </option>
+                                    <option value="NOTA">NOTA</option>
+                                    <option value="IND">IND </option>
+                                    <option value="BSP">BSP </option>
+                                    <option value="SDPI"> SDPI</option>
+                                    <option value="SUCI(C)">SUCI(C)</option>
+                                    <option value="SDC">SDC </option>
+                                    <option value="NALAP"> NALAP</option>
+                                    <option value="CPIM"> CPIM</option>
+                                    <option value="CPI"> CPI</option>
+                                    <option value="BDJS"> BDJS</option>
+                                    <option value="AgIMK">AgIMK </option>
+                                    <option value="igp">IGP </option>
+                                    <option value="IUML">IUML</option>
+                                    <option value="PDP">PDP</option>
+                                    <option value="MCPI">MCPI</option>
+                                    <option value="SMFB">SMFB</option>
+                                    <option value="APoI">APoI</option>
+                                    <option value="RSPS">RSPS</option>
+                                    <option value="VCK">VCK</option>
+                                    <option value="KEC(M)">KEC(M)</option>
+                                    <option value="KEC">KEC</option>
+                                    <option value="RSP">RSP</option>
+                                    <option value="PNP">PNP</option>
+                                    <option value="AAAP">AAAP</option>
+                                    <option value="AITC">AITC</option>
+                                    <option value="WPOI">WPOI</option>
+                                    <option value="SJD">SJD</option>
+                                    <option value="SHS">SHS</option>
+                                    <option value="JD(U)">D(U)</option>
+                                    <option value="SRP">SRP</option>
+                                    <option value="JD(S)">JD(S)</option>
+                                    <option value="SUCI">SUCI</option>
+                                    <option value="RSPK(B)">RSPK(B)</option>
+                                    <option value="SLAP">SLAP</option>
+                                    <option value="RPI(A)">RPI(A)</option>
+                                    <option value="RPI">RPI</option>
+                                    <option value="CPI(Marxist)">CPI(Marxist)</option>
+                                    <option value="INDEPENDENT">INDEPENDENT</option>
+                                    <option value="THPI">THPI</option>
+                                    <option value="NCP">NCP</option>
+                                    <option value="MUL">MUL</option>
+                                    <option value="CPI(ML)(L)">CPI(ML)(L)</option>
+                                    <option value="LJP">LJP</option>
+                                    <option value="SWJP">SWJP</option>
+                                    <option value="BSA">BSA</option>
+                                    <option value="IFDP">IFDP</option>
+                                    <option value="RLD">RLD</option>
+                                    <option value="AKMDMP">AKMDMP</option>
+                                    <option value="RJD">RJD</option>
+                                    <option value="AJBP">AJBP</option>
+                                    <option value="INL">INL</option>
+                                    <option value="JD">JD</option>
+                                    <option value="JP">JP</option>
+                                    <option value="SAP">SAP</option>
+                                    <option value="NPP">NPP</option>
+                                    <option value="ICS">ICS</option>
+                                    <option value="FBL">FBL</option>
+                                    <option value="LKD">LKD</option>
+                                    <option value="ICS(SCS)">ICS(SCS)</option>
+                                    <option value="DDP">DDP</option>
+                                    <option value="DKP">DKP</option>
+                                    <option value="JNP (JP)">JNP (JP)</option>
+                                    <option value="SUC">SUC</option>
+                                    <option value="IML">IML</option>
+                                    <option value="KEC(J)">KEC(J)</option>
+                                    <option value="JNP">JNP</option>
+                                    <option value="INC(U)">INC(U)</option>
+                                    <option value="INC(I)">INC(I)</option>
+                                    <option value="BLD">BLD</option>
+                                    <option value="MLO">MLO</option>
+                                    <option value="KCP">KCP</option>
+                                    <option value="BJS">BJS</option>
+                                    <option value="NCO">NCO</option>
+                                    <option value="ISP">ISP</option>
+                                    <option value="SSP">SSP</option>
+                                    <option value="SWA">SWA</option>
+                                    <option value="PSP">PSP</option>
+                                    <option value="NCJ">NCJ</option>
+                                    <option value="JS">JS</option>
+                                    <option value="ML">ML</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <div class="box">
+                              <div class="detail-box">
+                                 <label for="Party_Type_TCPD">Choose Party type:</label>
+                                 <select name="ptyp" id="Party_Type_TCPD">
+                                    <option value="invalid">select</option>
+                                    <option value="National Party">National Party</option>
+                                    <option value="NOTA">NOTA</option>
+                                    <option value="Independents">Independents</option>
+                                    <option value="State-based Party">State-based Party</option>
+                                    <option value="State-based Party (Other State)">State-based Party (Other State)</option>
+                                    <option value="Local Party">Local Party</option>
+                                 </select>
+                              </div>
+                           </div>
+                        </div>
+                        <style>
+                           .box {
+                           display: inline-block; /* Or use float: left; */
+                           width: calc(50% - 10px); /* Adjust width as needed */
+                           margin: 5px;
+                           background-color: lightblue;
+                           border: 1px solid black;
+                           }
+                           .detail-box {
+                           padding: 10px;
+                           }
+                        </style>
+                        <div class="container">
+                           <div class="box">
+                              <div class="detail-box">
+                                 <label for="Sex">Choose Sex:</label>
+                                 <select name="sex" id="Sex">
+                                    <option value="invalid">select</option>
+                                    <option value="M">Male</option>
+                                    <option value="F">Female</option>
+                                    <option value="O">Others</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <div class="box">
+                              <div class="detail-box">
+                                 <label for="Electors">Choose number of electors:</label>
+                                 <input type="number" id="Electors" name="electors" min="40000" max="1700000" required>
+                              </div>
+                           </div>
+                           <div class="box">
+                              <div class="detail-box">
+                                 <label for="Turncoat">Turncoat:</label>
+                                 <select name="tcoat" id="Turncoat">
+                                    <option value="invalid">select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <div class="box">
+                              <div class="detail-box">
+                                 <label for="Incumbent">Incumbent:</label>
+                                 <select name="icu" id="Incumbent">
+                                    <option value="invalid">select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <div class="box">
+                              <div class="detail-box">
+                                 <label for="Electors">Candidate_count_per_constituency:</label>
+                                 <input type="number" id="ccount" name="ccount" min="0" max="100" required>
+                              </div>
+                           </div>
+                        </div>
+                        <style>
+                           .btn-container {
+                           /* Add styling to the container to control layout */
+                           display: flex; /* Use flexbox layout */
+                           justify-content: center; /* Center the buttons horizontally */
+                           margin-top: 20px; /* Add some space above the buttons */
+                           }
+                           .btn {
+                           /* Add general button styles */
+                           margin: 0 5px; /* Add margin between buttons */
+                           padding: 10px 20px;
+                           font-size: 16px;
+                           text-align: center;
+                           cursor: pointer;
+                           border: none;
+                           border-radius: 5px;
+                           transition: background-color 0.3s ease;
+                           }
+                           .btn-submit {
+                           /* Add specific styles for the submit button */
+                           background-color: #007bff; /* Change background color */
+                           color: #fff; /* Change text color */
+                           }
+                           .btn-reset {
+                           /* Add specific styles for the reset button */
+                           background-color: #dc3545; /* Change background color */
+                           color: #fff; /* Change text color */
+                           }
+                           .btn:hover {
+                           /* Add hover effect for both buttons */
+                           filter: brightness(90%); /* Slightly reduce brightness on hover */
+                           }
+                        </style>
+                        <div class="btn-container">
+                           &nbsp;&nbsp;&nbsp;&nbsp; <input type="submit" value="Predict" class="btn btn-submit">
+                           &nbsp;&nbsp;<input type="reset" value="Clear" class="btn btn-reset">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </form>
+         </section>
+         <!-- end Predict section -->
+         <!-- info section -->
+  <section class="info_section long_section">
+
+    <div class="container">
+      <div class="contact_nav">
+        <a href="">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          <span>
+            Call : +01 123455678990
+          </span>
+        </a>
+        <a href="">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <span>
+            Email : demo@gmail.com
+          </span>
+        </a>
+        <a href="">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <span>
+            Location
+          </span>
+        </a>
+      </div>
+
+      <div class="info_top ">
+        <div class="row ">
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="info_links">
+              <h4>
+                QUICK LINKS
+              </h4>
+              <div class="info_links_menu">
+                <a class="" href="/">Home <span class="sr-only">(current)</span></a>
+                <a class="" href="/about"> About</a>
+                
+                <a class="" href="/knowledge_center">Knowledge Center</a>
+                <a class="" href="/contact">Contact Us</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="info_form">
+              <h4>
+                SIGN UP TO OUR NEWSLETTER
+              </h4>
+              <form action="">
+                <input type="text" placeholder="Enter Your Email" />
+                <button type="submit">
+                  Subscribe
+                </button>
+              </form>
+              <div class="social_box">
+                <a href="">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end info_section -->
+
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="https://html.design/">DSA 7</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+
+  <!-- jQery -->
+  <script src="/static/js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="/static/js/bootstrap.js"></script>
+  <!-- custom js -->
+  <script src="/static/js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>
